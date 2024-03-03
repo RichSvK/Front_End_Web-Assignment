@@ -1,0 +1,155 @@
+body{
+    background-image: url('../Assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page-content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 20vw;
+}
+
+.location{
+    width: 30vw;
+    border-style: ridge;
+    border-color: black;
+    margin: 1vw 1vw 0.5vw 1vw;
+    border-radius: 1vw;
+    background-color: white;
+}
+
+.photo-location{
+    width: 100%;
+    text-align: center;
+}
+
+.photo-location img{
+    border-top-left-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    width: 100%;
+    vertical-align: middle;
+    height: 20vw;
+    object-fit: fill;
+}
+
+.information > img{
+    height: 2.1vw;
+    margin-right: 0.5vw;
+}
+
+.information-n{
+    display: block;
+    width: 100%;
+    padding-bottom: 0.8vw;
+}
+
+.information{
+    display: flex;
+    margin: 0.5vw 0.5vw 0.5vw 1vw;
+    width: 100%;
+    align-items: center;
+}
+
+.information-text{
+    font-size: 1.4vw;
+}
+
+.store-name{
+    background-color: black;
+}
+
+.store{
+    font-size: 1.6vw;
+    padding: 0.5vw 0;
+    color: #F1F1F1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.photo{
+    height: 2vw;
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.photo img{
+    height: 100%;
+    object-position: fill;
+}
+
+@media (max-width: 800px){
+    .information-text{
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .photo{
+        height: 2.5vw;
+        margin-right: 1vw;
+    }
+
+    .location{
+        width: 43vw;
+        margin: 1.5vw 1vw;
+    }
+
+    .information-text{
+        font-size: 2vw;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    #page-content{
+        width: 100%;
+    }
+
+    .location{
+        height: 80vw;
+        width: 100vw;
+    }
+
+    .photo-location{
+        height: 45vw;
+    }
+
+    .photo-location > img{
+        height: 100%;
+    }
+
+    .information-n{
+        padding: 0 0 1vw 0;
+    }
+
+    .store{
+        font-size: 4vw;
+    }
+
+    .information{
+        height: 7vw;
+    }
+
+    .information > img{
+        height: 6vw;
+        margin-right: 1.5vw;
+    }
+
+    .information-text{
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .photo{
+        height: 5vw;
+        margin-right: 1vw;
+    }
+
+    #page-text{
+        font-size: 6vw;
+    }
+}
